@@ -1,0 +1,1068 @@
+2025-08-22T14:56:57.312+03:00  INFO 11516 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 11516 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T14:56:57.314+03:00  INFO 11516 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T14:56:58.644+03:00  INFO 11516 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T14:56:58.754+03:00  INFO 11516 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2025-08-22T14:56:59.313+03:00  INFO 11516 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T14:56:59.327+03:00  INFO 11516 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T14:56:59.327+03:00  INFO 11516 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T14:56:59.385+03:00  INFO 11516 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T14:56:59.385+03:00  INFO 11516 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1984 ms
+2025-08-22T14:56:59.694+03:00  INFO 11516 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T14:56:59.797+03:00  INFO 11516 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T14:56:59.835+03:00  INFO 11516 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T14:57:00.197+03:00  INFO 11516 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T14:57:00.229+03:00  INFO 11516 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T14:57:00.679+03:00  INFO 11516 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ace919c
+2025-08-22T14:57:00.685+03:00  INFO 11516 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T14:57:00.783+03:00  INFO 11516 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T14:57:02.067+03:00  INFO 11516 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T14:57:02.203+03:00  INFO 11516 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T14:57:02.251+03:00  INFO 11516 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T14:57:02.899+03:00  WARN 11516 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T14:57:03.341+03:00  INFO 11516 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T14:57:03.351+03:00  INFO 11516 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 6.81 seconds (process running for 7.238)
+2025-08-22T14:57:10.054+03:00  INFO 11516 --- [timesheet-tool] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T14:57:10.054+03:00  INFO 11516 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T14:57:10.056+03:00  INFO 11516 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T14:57:52.517+03:00  INFO 11516 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T14:57:52.521+03:00  INFO 11516 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T14:57:52.521+03:00  INFO 11516 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T14:57:52.537+03:00  INFO 11516 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T14:57:52.543+03:00  INFO 11516 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22 14:57:54 [main] INFO  c.c.t.TimesheetToolApplication - Starting TimesheetToolApplication using Java 21.0.7 with PID 5244 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22 14:57:54 [main] INFO  c.c.t.TimesheetToolApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-22 14:57:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22 14:57:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2025-08-22 14:57:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-22 14:57:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-22 14:57:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22 14:57:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-22 14:57:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1386 ms
+2025-08-22 14:57:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22 14:57:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22 14:57:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-22 14:57:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22 14:57:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-22 14:57:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38d42ab7
+2025-08-22 14:57:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-22 14:57:56 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22 14:57:57 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22 14:57:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22 14:57:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22 14:57:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22 14:57:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-22 14:57:58 [main] INFO  c.c.t.TimesheetToolApplication - Started TimesheetToolApplication in 4.425 seconds (process running for 4.874)
+2025-08-22 14:58:00 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22 14:58:00 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-22 14:58:00 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-08-22 15:01:15 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22 15:01:15 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-22 15:01:15 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22 15:01:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-22 15:01:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-22T15:01:18.571+03:00  INFO 9564 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 9564 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:01:18.573+03:00  INFO 9564 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:01:19.738+03:00  INFO 9564 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:01:19.849+03:00  INFO 9564 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:01:20.646+03:00  INFO 9564 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:01:20.669+03:00  INFO 9564 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:01:20.669+03:00  INFO 9564 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:01:20.761+03:00  INFO 9564 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:01:20.761+03:00  INFO 9564 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2106 ms
+2025-08-22T15:01:21.109+03:00  INFO 9564 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:01:21.187+03:00  INFO 9564 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:01:21.243+03:00  INFO 9564 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:01:21.703+03:00  INFO 9564 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:01:21.747+03:00  INFO 9564 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:01:22.467+03:00  INFO 9564 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58182b96
+2025-08-22T15:01:22.470+03:00  INFO 9564 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:01:22.644+03:00  INFO 9564 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:01:23.624+03:00  INFO 9564 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:01:23.830+03:00  INFO 9564 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:01:23.907+03:00  INFO 9564 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:01:24.455+03:00  WARN 9564 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:01:25.070+03:00  INFO 9564 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:01:25.087+03:00  INFO 9564 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 7.358 seconds (process running for 8.151)
+2025-08-22T15:01:28.158+03:00  INFO 9564 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:01:28.159+03:00  INFO 9564 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:01:28.160+03:00  INFO 9564 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:08:10.102+03:00  INFO 9564 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:08:10.115+03:00  INFO 9564 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:08:10.118+03:00  INFO 9564 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:08:10.120+03:00  INFO 9564 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:08:10.127+03:00  INFO 9564 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:08:13.791+03:00  INFO 4144 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 4144 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:08:13.793+03:00  INFO 4144 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:08:14.500+03:00  INFO 4144 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:08:14.566+03:00  INFO 4144 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:08:15.024+03:00  INFO 4144 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:08:15.037+03:00  INFO 4144 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:08:15.037+03:00  INFO 4144 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:08:15.088+03:00  INFO 4144 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:08:15.089+03:00  INFO 4144 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1241 ms
+2025-08-22T15:08:15.244+03:00  INFO 4144 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:08:15.304+03:00  INFO 4144 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:08:15.332+03:00  INFO 4144 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:08:15.560+03:00  INFO 4144 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:08:15.585+03:00  INFO 4144 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:08:15.972+03:00  INFO 4144 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6723cce7
+2025-08-22T15:08:15.975+03:00  INFO 4144 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:08:16.087+03:00  INFO 4144 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:08:17.162+03:00  INFO 4144 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:08:17.342+03:00  INFO 4144 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:08:17.404+03:00  INFO 4144 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:08:17.917+03:00  WARN 4144 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:08:18.449+03:00  INFO 4144 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:08:18.462+03:00  INFO 4144 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 5.161 seconds (process running for 5.529)
+2025-08-22T15:08:23.128+03:00  INFO 4144 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:08:23.129+03:00  INFO 4144 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:08:23.130+03:00  INFO 4144 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:08:23.307+03:00 ERROR 4144 --- [timesheet-tool] [http-nio-8080-exec-1] c.c.timesheet.controller.UserController  : Login error: Invalid password
+2025-08-22T15:09:17.121+03:00  INFO 4144 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:09:17.129+03:00  INFO 4144 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:09:17.131+03:00  INFO 4144 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:09:17.133+03:00  INFO 4144 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:09:17.141+03:00  INFO 4144 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:09:20.341+03:00  INFO 18096 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 18096 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:09:20.344+03:00  INFO 18096 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:09:21.242+03:00  INFO 18096 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:09:21.314+03:00  INFO 18096 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:09:21.748+03:00  INFO 18096 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:09:21.763+03:00  INFO 18096 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:09:21.764+03:00  INFO 18096 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:09:21.834+03:00  INFO 18096 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:09:21.834+03:00  INFO 18096 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1426 ms
+2025-08-22T15:09:22.028+03:00  INFO 18096 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:09:22.075+03:00  INFO 18096 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:09:22.110+03:00  INFO 18096 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:09:22.461+03:00  INFO 18096 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:09:22.499+03:00  INFO 18096 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:09:23.113+03:00  INFO 18096 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58182b96
+2025-08-22T15:09:23.116+03:00  INFO 18096 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:09:23.242+03:00  INFO 18096 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:09:24.139+03:00  INFO 18096 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:09:24.302+03:00  INFO 18096 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:09:24.353+03:00  INFO 18096 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:09:24.847+03:00  WARN 18096 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:09:25.327+03:00  INFO 18096 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:09:25.341+03:00  INFO 18096 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 5.562 seconds (process running for 5.909)
+2025-08-22T15:09:29.489+03:00  INFO 18096 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:09:29.490+03:00  INFO 18096 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:09:29.490+03:00  INFO 18096 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-22T15:09:29.562+03:00 ERROR 18096 --- [timesheet-tool] [http-nio-8080-exec-1] c.c.timesheet.controller.UserController  : Registration error: Name must be between 3 and 50 characters
+2025-08-22T15:10:09.947+03:00  INFO 18096 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:10:09.959+03:00  INFO 18096 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:10:09.961+03:00  INFO 18096 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:10:09.962+03:00  INFO 18096 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:10:09.970+03:00  INFO 18096 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:10:13.165+03:00  INFO 9144 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 9144 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:10:13.166+03:00  INFO 9144 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:10:13.853+03:00  INFO 9144 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:10:13.919+03:00  INFO 9144 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:10:14.408+03:00  INFO 9144 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:10:14.424+03:00  INFO 9144 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:10:14.424+03:00  INFO 9144 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:10:14.499+03:00  INFO 9144 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:10:14.500+03:00  INFO 9144 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1284 ms
+2025-08-22T15:10:14.711+03:00  INFO 9144 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:10:14.764+03:00  INFO 9144 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:10:14.810+03:00  INFO 9144 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:10:15.320+03:00  INFO 9144 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:10:15.363+03:00  INFO 9144 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:10:15.939+03:00  INFO 9144 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6723cce7
+2025-08-22T15:10:15.943+03:00  INFO 9144 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:10:16.062+03:00  INFO 9144 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:10:16.952+03:00  INFO 9144 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:10:17.087+03:00  INFO 9144 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:10:17.132+03:00  INFO 9144 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:10:17.546+03:00  WARN 9144 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:10:17.972+03:00  INFO 9144 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:10:17.983+03:00  INFO 9144 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 5.285 seconds (process running for 5.69)
+2025-08-22T15:10:20.363+03:00  INFO 9144 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:10:20.363+03:00  INFO 9144 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:10:20.364+03:00  INFO 9144 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:10:20.451+03:00 ERROR 9144 --- [timesheet-tool] [http-nio-8080-exec-1] c.c.timesheet.controller.UserController  : Registration error: Name must be between 3 and 50 characters
+2025-08-22T15:10:30.666+03:00 ERROR 9144 --- [timesheet-tool] [http-nio-8080-exec-4] c.c.timesheet.controller.UserController  : Registration error: Password must be between 6 and 50 characters
+2025-08-22T15:17:28.442+03:00  INFO 9144 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:17:28.451+03:00  INFO 9144 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:17:28.454+03:00  INFO 9144 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:17:28.455+03:00  INFO 9144 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:17:28.463+03:00  INFO 9144 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:17:31.794+03:00  INFO 33804 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 33804 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:17:31.797+03:00  INFO 33804 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:17:32.615+03:00  INFO 33804 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:17:32.690+03:00  INFO 33804 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:17:33.160+03:00  INFO 33804 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:17:33.173+03:00  INFO 33804 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:17:33.173+03:00  INFO 33804 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:17:33.215+03:00  INFO 33804 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:17:33.216+03:00  INFO 33804 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1358 ms
+2025-08-22T15:17:33.363+03:00  INFO 33804 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:17:33.412+03:00  INFO 33804 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:17:33.448+03:00  INFO 33804 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:17:33.673+03:00  INFO 33804 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:17:33.698+03:00  INFO 33804 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:17:34.002+03:00  INFO 33804 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6723cce7
+2025-08-22T15:17:34.004+03:00  INFO 33804 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:17:34.068+03:00  INFO 33804 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:17:34.561+03:00  INFO 33804 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:17:34.669+03:00  INFO 33804 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:17:34.708+03:00  INFO 33804 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:17:35.144+03:00  WARN 33804 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:17:35.451+03:00  INFO 33804 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:17:35.458+03:00  INFO 33804 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 4.231 seconds (process running for 4.638)
+2025-08-22T15:17:54.563+03:00  INFO 33804 --- [timesheet-tool] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:17:54.564+03:00  INFO 33804 --- [timesheet-tool] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:17:54.565+03:00  INFO 33804 --- [timesheet-tool] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:17:54.791+03:00 ERROR 33804 --- [timesheet-tool] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Login trials expired for user ID: 5] with root cause
+
+java.lang.RuntimeException: Login trials expired for user ID: 5
+	at com.company.timesheet.services.TimesheetLoggingService.saveTimesheetLogging(TimesheetLoggingService.java:26) ~[classes/:na]
+	at com.company.timesheet.controller.TimesheetLoggingController.loggingTime(TimesheetLoggingController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-22T15:18:24.164+03:00  INFO 33804 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:18:24.172+03:00  INFO 33804 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:18:24.175+03:00  INFO 33804 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:18:24.176+03:00  INFO 33804 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:18:24.184+03:00  INFO 33804 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:18:27.406+03:00  INFO 40720 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 40720 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:18:27.409+03:00  INFO 40720 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:18:28.097+03:00  INFO 40720 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:18:28.166+03:00  INFO 40720 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:18:28.585+03:00  INFO 40720 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:18:28.599+03:00  INFO 40720 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:18:28.599+03:00  INFO 40720 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:18:28.655+03:00  INFO 40720 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:18:28.655+03:00  INFO 40720 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1191 ms
+2025-08-22T15:18:28.809+03:00  INFO 40720 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:18:28.861+03:00  INFO 40720 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:18:28.890+03:00  INFO 40720 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:18:29.130+03:00  INFO 40720 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:18:29.158+03:00  INFO 40720 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:18:29.497+03:00  INFO 40720 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6723cce7
+2025-08-22T15:18:29.499+03:00  INFO 40720 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:18:29.567+03:00  INFO 40720 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:18:30.117+03:00  INFO 40720 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:18:30.236+03:00  INFO 40720 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:18:30.275+03:00  INFO 40720 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:18:30.564+03:00  WARN 40720 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:18:30.856+03:00  INFO 40720 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:18:30.864+03:00  INFO 40720 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 3.91 seconds (process running for 4.246)
+2025-08-22T15:18:34.167+03:00  INFO 40720 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:18:34.168+03:00  INFO 40720 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:18:34.169+03:00  INFO 40720 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:18:34.342+03:00 ERROR 40720 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Login trials expired for user ID: 5] with root cause
+
+java.lang.RuntimeException: Login trials expired for user ID: 5
+	at com.company.timesheet.services.TimesheetLoggingService.saveTimesheetLogging(TimesheetLoggingService.java:26) ~[classes/:na]
+	at com.company.timesheet.controller.TimesheetLoggingController.loggingTime(TimesheetLoggingController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-22T15:25:18.626+03:00  INFO 40720 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:25:18.635+03:00  INFO 40720 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:25:18.638+03:00  INFO 40720 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:25:18.640+03:00  INFO 40720 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:25:18.648+03:00  INFO 40720 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:26:58.794+03:00  INFO 41416 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 41416 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:26:58.796+03:00  INFO 41416 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:26:59.437+03:00  INFO 41416 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:26:59.511+03:00  INFO 41416 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:26:59.972+03:00  INFO 41416 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:26:59.987+03:00  INFO 41416 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:26:59.987+03:00  INFO 41416 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:27:00.043+03:00  INFO 41416 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:27:00.044+03:00  INFO 41416 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1201 ms
+2025-08-22T15:27:00.194+03:00  INFO 41416 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:27:00.246+03:00  INFO 41416 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:27:00.272+03:00  INFO 41416 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:27:00.500+03:00  INFO 41416 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:27:00.521+03:00  INFO 41416 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:27:00.822+03:00  INFO 41416 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38d42ab7
+2025-08-22T15:27:00.825+03:00  INFO 41416 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:27:00.890+03:00  INFO 41416 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:27:01.404+03:00  INFO 41416 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:27:01.507+03:00  INFO 41416 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:27:01.541+03:00  INFO 41416 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:27:01.840+03:00  WARN 41416 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:27:02.148+03:00  INFO 41416 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:27:02.154+03:00  INFO 41416 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 3.828 seconds (process running for 4.156)
+2025-08-22T15:27:15.071+03:00  INFO 41416 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:27:15.072+03:00  INFO 41416 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:27:15.073+03:00  INFO 41416 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:27:15.260+03:00 ERROR 41416 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Login trials expired for user ID: 5] with root cause
+
+java.lang.RuntimeException: Login trials expired for user ID: 5
+	at com.company.timesheet.services.TimesheetLoggingService.saveTimesheetLogging(TimesheetLoggingService.java:26) ~[classes/:na]
+	at com.company.timesheet.controller.TimesheetLoggingController.loggingTime(TimesheetLoggingController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-22T15:36:39.566+03:00  INFO 41416 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:36:39.578+03:00  INFO 41416 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:36:39.582+03:00  INFO 41416 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:36:39.584+03:00  INFO 41416 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:36:39.590+03:00  INFO 41416 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:36:43.010+03:00  INFO 2404 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 2404 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:36:43.013+03:00  INFO 2404 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:36:43.973+03:00  INFO 2404 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:36:44.062+03:00  INFO 2404 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:36:44.550+03:00  INFO 2404 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:36:44.568+03:00  INFO 2404 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:36:44.569+03:00  INFO 2404 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:36:44.615+03:00  INFO 2404 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:36:44.616+03:00  INFO 2404 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1546 ms
+2025-08-22T15:36:44.768+03:00  INFO 2404 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:36:44.811+03:00  INFO 2404 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:36:44.844+03:00  INFO 2404 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:36:45.094+03:00  INFO 2404 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:36:45.119+03:00  INFO 2404 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:36:45.425+03:00  INFO 2404 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59313495
+2025-08-22T15:36:45.427+03:00  INFO 2404 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:36:45.494+03:00  INFO 2404 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:36:46.005+03:00  INFO 2404 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:36:46.138+03:00  INFO 2404 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:36:46.191+03:00  INFO 2404 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:36:46.567+03:00  WARN 2404 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:36:46.937+03:00  INFO 2404 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:36:46.944+03:00  INFO 2404 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 4.455 seconds (process running for 4.796)
+2025-08-22T15:36:47.955+03:00  INFO 2404 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:36:47.955+03:00  INFO 2404 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:36:47.956+03:00  INFO 2404 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:36:48.164+03:00 ERROR 2404 --- [timesheet-tool] [http-nio-8080-exec-1] c.c.t.c.TimesheetLoggingController       : Timesheet logging error: Login trials expired for user ID: 5
+2025-08-22T15:37:33.264+03:00 ERROR 2404 --- [timesheet-tool] [http-nio-8080-exec-4] c.c.timesheet.controller.UserController  : Login error: Invalid password
+2025-08-22T15:37:38.156+03:00 ERROR 2404 --- [timesheet-tool] [http-nio-8080-exec-6] c.c.timesheet.controller.UserController  : Login error: Invalid password
+2025-08-22T15:40:54.185+03:00 ERROR 2404 --- [timesheet-tool] [http-nio-8080-exec-3] c.c.t.c.TimesheetLoggingController       : Timesheet logging error: Login time must be before logout time
+2025-08-22T15:41:02.474+03:00 ERROR 2404 --- [timesheet-tool] [http-nio-8080-exec-5] c.c.t.c.TimesheetLoggingController       : Timesheet logging error: Login time must be before logout time
+2025-08-22T15:41:09.181+03:00 ERROR 2404 --- [timesheet-tool] [http-nio-8080-exec-7] c.c.t.c.TimesheetLoggingController       : Timesheet logging error: Login time must be before logout time
+2025-08-22T15:47:02.355+03:00  INFO 2404 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:47:02.364+03:00  INFO 2404 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:47:02.367+03:00  INFO 2404 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:47:02.369+03:00  INFO 2404 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:47:02.375+03:00  INFO 2404 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:47:05.676+03:00  INFO 11116 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 11116 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:47:05.679+03:00  INFO 11116 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:47:06.498+03:00  INFO 11116 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:47:06.555+03:00  INFO 11116 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:47:06.979+03:00  INFO 11116 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:47:06.990+03:00  INFO 11116 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:47:06.990+03:00  INFO 11116 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:47:07.036+03:00  INFO 11116 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:47:07.036+03:00  INFO 11116 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1304 ms
+2025-08-22T15:47:07.180+03:00  INFO 11116 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:47:07.221+03:00  INFO 11116 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:47:07.248+03:00  INFO 11116 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:47:07.474+03:00  INFO 11116 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:47:07.498+03:00  INFO 11116 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:47:07.832+03:00  INFO 11116 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38d42ab7
+2025-08-22T15:47:07.834+03:00  INFO 11116 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:47:07.906+03:00  INFO 11116 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:47:08.429+03:00  INFO 11116 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:47:08.567+03:00  INFO 11116 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:47:08.605+03:00  INFO 11116 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:47:08.916+03:00  WARN 11116 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:47:09.219+03:00  INFO 11116 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:47:09.226+03:00  INFO 11116 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 4.056 seconds (process running for 4.464)
+2025-08-22T15:47:11.291+03:00  INFO 11116 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:47:11.291+03:00  INFO 11116 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:47:11.292+03:00  INFO 11116 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:52:10.349+03:00  INFO 11116 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:52:10.349+03:00  INFO 11116 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:52:10.349+03:00  INFO 11116 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:52:10.349+03:00  INFO 11116 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:52:10.365+03:00  INFO 11116 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:53:39.557+03:00  INFO 34384 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 34384 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:53:39.559+03:00  INFO 34384 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:53:40.464+03:00  INFO 34384 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:53:40.556+03:00  INFO 34384 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:53:41.209+03:00  INFO 34384 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:53:41.225+03:00  INFO 34384 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:53:41.225+03:00  INFO 34384 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:53:41.268+03:00  INFO 34384 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:53:41.282+03:00  INFO 34384 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1669 ms
+2025-08-22T15:53:41.452+03:00  INFO 34384 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:53:41.489+03:00  INFO 34384 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:53:41.505+03:00  INFO 34384 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:53:41.743+03:00  INFO 34384 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:53:41.774+03:00  INFO 34384 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:53:42.107+03:00  INFO 34384 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74cd798f
+2025-08-22T15:53:42.117+03:00  INFO 34384 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:53:42.170+03:00  INFO 34384 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:53:42.718+03:00  INFO 34384 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:53:42.903+03:00  INFO 34384 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:53:42.925+03:00  INFO 34384 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:53:43.243+03:00  WARN 34384 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:53:43.613+03:00  INFO 34384 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:53:43.619+03:00  INFO 34384 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 4.54 seconds (process running for 4.878)
+2025-08-22T15:53:59.903+03:00  INFO 34384 --- [timesheet-tool] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:53:59.904+03:00  INFO 34384 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:53:59.905+03:00  INFO 34384 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:54:13.445+03:00  INFO 34384 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:54:13.457+03:00  INFO 34384 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:54:13.460+03:00  INFO 34384 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:54:13.462+03:00  INFO 34384 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:54:13.472+03:00  INFO 34384 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:54:15.266+03:00  INFO 28424 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 28424 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:54:15.269+03:00  INFO 28424 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:54:15.974+03:00  INFO 28424 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:54:16.045+03:00  INFO 28424 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:54:16.483+03:00  INFO 28424 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:54:16.496+03:00  INFO 28424 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:54:16.497+03:00  INFO 28424 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:54:16.543+03:00  INFO 28424 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:54:16.543+03:00  INFO 28424 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1219 ms
+2025-08-22T15:54:16.694+03:00  INFO 28424 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:54:16.736+03:00  INFO 28424 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:54:16.770+03:00  INFO 28424 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:54:17.011+03:00  INFO 28424 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:54:17.037+03:00  INFO 28424 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:54:17.351+03:00  INFO 28424 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2913ca3e
+2025-08-22T15:54:17.354+03:00  INFO 28424 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:54:17.428+03:00  INFO 28424 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:54:17.972+03:00  INFO 28424 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:54:18.089+03:00  INFO 28424 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:54:18.124+03:00  INFO 28424 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:54:18.475+03:00  WARN 28424 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:54:18.774+03:00  INFO 28424 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:54:18.782+03:00  INFO 28424 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 4.017 seconds (process running for 4.472)
+2025-08-22T15:54:39.840+03:00  INFO 28424 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:54:39.850+03:00  INFO 28424 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:54:39.853+03:00  INFO 28424 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:54:39.855+03:00  INFO 28424 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:54:39.861+03:00  INFO 28424 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:54:42.832+03:00  INFO 35480 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 35480 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:54:42.835+03:00  INFO 35480 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:54:43.677+03:00  INFO 35480 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:54:43.758+03:00  INFO 35480 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:54:44.167+03:00  INFO 35480 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:54:44.181+03:00  INFO 35480 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:54:44.181+03:00  INFO 35480 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:54:44.223+03:00  INFO 35480 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:54:44.224+03:00  INFO 35480 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1331 ms
+2025-08-22T15:54:44.382+03:00  INFO 35480 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:54:44.430+03:00  INFO 35480 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:54:44.457+03:00  INFO 35480 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:54:44.699+03:00  INFO 35480 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:54:44.722+03:00  INFO 35480 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:54:45.046+03:00  INFO 35480 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d637673
+2025-08-22T15:54:45.049+03:00  INFO 35480 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:54:45.124+03:00  INFO 35480 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:54:45.648+03:00  INFO 35480 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:54:45.755+03:00  INFO 35480 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:54:45.792+03:00  INFO 35480 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:54:46.088+03:00  WARN 35480 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:54:46.383+03:00  INFO 35480 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:54:46.391+03:00  INFO 35480 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 4.059 seconds (process running for 4.398)
+2025-08-22T15:54:52.823+03:00  INFO 35480 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:54:52.823+03:00  INFO 35480 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:54:52.824+03:00  INFO 35480 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:54:52.869+03:00  WARN 35480 --- [timesheet-tool] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'userID' for method parameter type Long is not present]
+2025-08-22T15:56:10.171+03:00  INFO 35480 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:56:10.180+03:00  INFO 35480 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:56:10.183+03:00  INFO 35480 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:56:10.185+03:00  INFO 35480 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:56:10.192+03:00  INFO 35480 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:56:11.921+03:00  INFO 33712 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 33712 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:56:11.923+03:00  INFO 33712 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:56:12.617+03:00  INFO 33712 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:56:12.689+03:00  INFO 33712 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:56:13.149+03:00  INFO 33712 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:56:13.163+03:00  INFO 33712 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:56:13.163+03:00  INFO 33712 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:56:13.212+03:00  INFO 33712 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:56:13.212+03:00  INFO 33712 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1244 ms
+2025-08-22T15:56:13.361+03:00  INFO 33712 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:56:13.393+03:00  INFO 33712 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:56:13.420+03:00  INFO 33712 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:56:13.643+03:00  INFO 33712 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:56:13.669+03:00  INFO 33712 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:56:13.957+03:00  INFO 33712 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1850f2da
+2025-08-22T15:56:13.959+03:00  INFO 33712 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:56:14.024+03:00  INFO 33712 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:56:14.532+03:00  INFO 33712 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:56:14.639+03:00  INFO 33712 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:56:14.673+03:00  INFO 33712 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:56:14.964+03:00  WARN 33712 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:56:15.247+03:00  INFO 33712 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:56:15.254+03:00  INFO 33712 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 3.847 seconds (process running for 4.23)
+2025-08-22T15:56:19.011+03:00  INFO 33712 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:56:19.012+03:00  INFO 33712 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:56:19.013+03:00  INFO 33712 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:56:19.047+03:00  WARN 33712 --- [timesheet-tool] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'userID' for method parameter type Long is not present]
+2025-08-22T15:57:44.354+03:00  INFO 33712 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T15:57:44.363+03:00  INFO 33712 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T15:57:44.366+03:00  INFO 33712 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:57:44.367+03:00  INFO 33712 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T15:57:44.375+03:00  INFO 33712 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T15:57:48.035+03:00  INFO 39108 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 39108 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T15:57:48.036+03:00  INFO 39108 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T15:57:48.700+03:00  INFO 39108 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T15:57:48.764+03:00  INFO 39108 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2025-08-22T15:57:49.175+03:00  INFO 39108 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T15:57:49.188+03:00  INFO 39108 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T15:57:49.188+03:00  INFO 39108 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T15:57:49.235+03:00  INFO 39108 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T15:57:49.236+03:00  INFO 39108 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1151 ms
+2025-08-22T15:57:49.386+03:00  INFO 39108 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T15:57:49.425+03:00  INFO 39108 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T15:57:49.452+03:00  INFO 39108 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T15:57:49.676+03:00  INFO 39108 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T15:57:49.698+03:00  INFO 39108 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T15:57:49.982+03:00  INFO 39108 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1850f2da
+2025-08-22T15:57:49.984+03:00  INFO 39108 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T15:57:50.046+03:00  INFO 39108 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T15:57:50.556+03:00  INFO 39108 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T15:57:50.663+03:00  INFO 39108 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T15:57:50.698+03:00  INFO 39108 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T15:57:51.033+03:00  WARN 39108 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T15:57:51.454+03:00  INFO 39108 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T15:57:51.460+03:00  INFO 39108 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 3.894 seconds (process running for 4.218)
+2025-08-22T15:57:54.510+03:00  INFO 39108 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T15:57:54.511+03:00  INFO 39108 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T15:57:54.512+03:00  INFO 39108 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T15:58:19.365+03:00 ERROR 39108 --- [timesheet-tool] [http-nio-8080-exec-4] c.c.t.c.TimesheetLoggingController       : Timesheet logging error: Login trials expired for user ID: 8
+2025-08-22T16:25:40.267+03:00  INFO 39108 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T16:25:40.283+03:00  INFO 39108 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T16:25:40.287+03:00  INFO 39108 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:25:40.287+03:00  INFO 39108 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T16:25:40.294+03:00  INFO 39108 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T16:25:43.603+03:00  INFO 23300 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 23300 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T16:25:43.607+03:00  INFO 23300 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T16:25:44.254+03:00  INFO 23300 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T16:25:44.313+03:00  INFO 23300 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2025-08-22T16:25:44.743+03:00  INFO 23300 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T16:25:44.755+03:00  INFO 23300 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T16:25:44.755+03:00  INFO 23300 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T16:25:44.802+03:00  INFO 23300 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T16:25:44.802+03:00  INFO 23300 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1154 ms
+2025-08-22T16:25:44.955+03:00  INFO 23300 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T16:25:45.001+03:00  INFO 23300 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T16:25:45.030+03:00  INFO 23300 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T16:25:45.282+03:00  INFO 23300 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T16:25:45.311+03:00  INFO 23300 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T16:25:45.662+03:00  INFO 23300 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49986178
+2025-08-22T16:25:45.662+03:00  INFO 23300 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T16:25:45.733+03:00  INFO 23300 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T16:25:46.315+03:00  INFO 23300 --- [timesheet-tool] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.company.timesheet.model.TimesheetLogging (class must be instantiated by Interceptor)
+2025-08-22T16:25:46.422+03:00  INFO 23300 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T16:25:46.468+03:00  INFO 23300 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:25:46.903+03:00  WARN 23300 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T16:25:47.241+03:00  INFO 23300 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T16:25:47.251+03:00  INFO 23300 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 4.115 seconds (process running for 4.45)
+2025-08-22T16:26:08.193+03:00  INFO 23300 --- [timesheet-tool] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T16:26:08.193+03:00  INFO 23300 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T16:26:08.195+03:00  INFO 23300 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T16:26:08.358+03:00 ERROR 23300 --- [timesheet-tool] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: No default constructor for entity 'com.company.timesheet.model.TimesheetLogging'] with root cause
+
+org.hibernate.InstantiationException: No default constructor for entity 'com.company.timesheet.model.TimesheetLogging'
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:93) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:4755) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1489) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.instantiateEntity(EntityInitializerImpl.java:1250) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveEntityInstance(EntityInitializerImpl.java:1243) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveEntityInstance2(EntityInitializerImpl.java:1201) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveEntityInstance1(EntityInitializerImpl.java:1117) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveInstance(EntityInitializerImpl.java:1032) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveKey(EntityInitializerImpl.java:587) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveKey(EntityInitializerImpl.java:457) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveKey(EntityInitializerImpl.java:97) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.internal.StandardRowReader.coordinateInitializers(StandardRowReader.java:235) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.internal.StandardRowReader.readRow(StandardRowReader.java:141) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.read(ListResultsConsumer.java:249) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:201) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:35) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:224) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:149) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:439) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:359) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:380) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:120) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:130) ~[spring-data-jpa-3.5.2.jar:3.5.2]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:93) ~[spring-data-jpa-3.5.2.jar:3.5.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:160) ~[spring-data-jpa-3.5.2.jar:3.5.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:148) ~[spring-data-jpa-3.5.2.jar:3.5.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.5.2.jar:3.5.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.5.2.jar:3.5.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:170) ~[spring-data-commons-3.5.2.jar:3.5.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149) ~[spring-data-commons-3.5.2.jar:3.5.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-3.5.2.jar:3.5.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.9.jar:6.2.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:136) ~[spring-data-jpa-3.5.2.jar:3.5.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.9.jar:6.2.9]
+	at jdk.proxy2/jdk.proxy2.$Proxy121.findByUserID(Unknown Source) ~[na:na]
+	at com.company.timesheet.services.TimesheetLoggingService.getLoggingTime(TimesheetLoggingService.java:47) ~[classes/:na]
+	at com.company.timesheet.controller.TimesheetLoggingController.getLoggingTime(TimesheetLoggingController.java:43) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-22T16:26:53.690+03:00  INFO 23300 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T16:26:53.697+03:00  INFO 23300 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T16:26:53.700+03:00  INFO 23300 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:26:53.702+03:00  INFO 23300 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T16:26:53.709+03:00  INFO 23300 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T16:26:56.825+03:00  INFO 37596 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 37596 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T16:26:56.827+03:00  INFO 37596 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T16:26:57.480+03:00  INFO 37596 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T16:26:57.560+03:00  INFO 37596 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
+2025-08-22T16:26:58.012+03:00  INFO 37596 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T16:26:58.025+03:00  INFO 37596 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T16:26:58.026+03:00  INFO 37596 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T16:26:58.077+03:00  INFO 37596 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T16:26:58.077+03:00  INFO 37596 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1201 ms
+2025-08-22T16:26:58.220+03:00  INFO 37596 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T16:26:58.264+03:00  INFO 37596 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T16:26:58.293+03:00  INFO 37596 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T16:26:58.543+03:00  INFO 37596 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T16:26:58.565+03:00  INFO 37596 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T16:26:58.868+03:00  INFO 37596 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@314f59b
+2025-08-22T16:26:58.870+03:00  INFO 37596 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T16:26:58.931+03:00  INFO 37596 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T16:26:59.555+03:00  INFO 37596 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T16:26:59.598+03:00  INFO 37596 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:26:59.890+03:00  WARN 37596 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T16:27:00.198+03:00  INFO 37596 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T16:27:00.205+03:00  INFO 37596 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 3.859 seconds (process running for 4.208)
+2025-08-22T16:27:02.783+03:00  INFO 37596 --- [timesheet-tool] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T16:27:02.783+03:00  INFO 37596 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T16:27:02.784+03:00  INFO 37596 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T16:35:19.927+03:00  INFO 37596 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T16:35:19.927+03:00  INFO 37596 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T16:35:19.944+03:00  INFO 37596 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:35:19.944+03:00  INFO 37596 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T16:35:19.950+03:00  INFO 37596 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T16:36:21.311+03:00  INFO 33712 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 33712 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T16:36:21.313+03:00  INFO 33712 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T16:36:22.048+03:00  INFO 33712 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T16:36:22.128+03:00  INFO 33712 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2025-08-22T16:36:22.539+03:00  INFO 33712 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T16:36:22.557+03:00  INFO 33712 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T16:36:22.557+03:00  INFO 33712 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T16:36:22.608+03:00  INFO 33712 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T16:36:22.608+03:00  INFO 33712 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1236 ms
+2025-08-22T16:36:22.747+03:00  INFO 33712 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T16:36:22.788+03:00  INFO 33712 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T16:36:22.813+03:00  INFO 33712 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T16:36:23.048+03:00  INFO 33712 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T16:36:23.072+03:00  INFO 33712 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T16:36:23.378+03:00  INFO 33712 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49986178
+2025-08-22T16:36:23.378+03:00  INFO 33712 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T16:36:23.442+03:00  INFO 33712 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T16:36:24.076+03:00  INFO 33712 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T16:36:24.113+03:00  INFO 33712 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:36:24.444+03:00  WARN 33712 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T16:36:24.841+03:00  INFO 33712 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T16:36:24.841+03:00  INFO 33712 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 4.135 seconds (process running for 4.597)
+2025-08-22T16:36:28.726+03:00  INFO 33712 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T16:36:28.729+03:00  INFO 33712 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T16:36:28.729+03:00  INFO 33712 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-22T16:42:31.307+03:00  INFO 33712 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T16:42:31.317+03:00  INFO 33712 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T16:42:31.320+03:00  INFO 33712 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:42:31.322+03:00  INFO 33712 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T16:42:31.327+03:00  INFO 33712 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T16:42:34.396+03:00  INFO 35016 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 35016 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T16:42:34.396+03:00  INFO 35016 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T16:42:35.159+03:00  INFO 35016 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T16:42:35.230+03:00  INFO 35016 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-08-22T16:42:35.665+03:00  INFO 35016 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T16:42:35.681+03:00  INFO 35016 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T16:42:35.681+03:00  INFO 35016 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T16:42:35.731+03:00  INFO 35016 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T16:42:35.731+03:00  INFO 35016 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1282 ms
+2025-08-22T16:42:35.887+03:00  INFO 35016 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T16:42:35.931+03:00  INFO 35016 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T16:42:35.951+03:00  INFO 35016 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T16:42:36.209+03:00  INFO 35016 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T16:42:36.243+03:00  INFO 35016 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T16:42:36.648+03:00  INFO 35016 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ebd159
+2025-08-22T16:42:36.648+03:00  INFO 35016 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T16:42:36.711+03:00  INFO 35016 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T16:42:37.394+03:00  INFO 35016 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T16:42:37.434+03:00  INFO 35016 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:42:37.758+03:00  WARN 35016 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T16:42:38.214+03:00  INFO 35016 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T16:42:38.222+03:00  INFO 35016 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 4.286 seconds (process running for 4.625)
+2025-08-22T16:42:39.576+03:00  INFO 35016 --- [timesheet-tool] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T16:42:39.577+03:00  INFO 35016 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T16:42:39.578+03:00  INFO 35016 --- [timesheet-tool] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-22T16:42:39.717+03:00 ERROR 35016 --- [timesheet-tool] [http-nio-8080-exec-1] c.c.t.c.TimesheetLoggingController       : Can't Retrieve Data: Login trials not found for user ID: 2
+2025-08-22T16:43:07.681+03:00  INFO 35016 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T16:43:07.689+03:00  INFO 35016 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T16:43:07.692+03:00  INFO 35016 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:43:07.693+03:00  INFO 35016 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T16:43:07.699+03:00  INFO 35016 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-22T16:43:15.683+03:00  INFO 30072 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Starting TimesheetToolApplication using Java 21.0.7 with PID 30072 (D:\Courses\ITIDA\timesheet\timesheet\target\classes started by aelrashidy in D:\Courses\ITIDA\timesheet\timesheet)
+2025-08-22T16:43:15.686+03:00  INFO 30072 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-22T16:43:16.317+03:00  INFO 30072 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-22T16:43:16.387+03:00  INFO 30072 --- [timesheet-tool] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2025-08-22T16:43:16.800+03:00  INFO 30072 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-22T16:43:16.815+03:00  INFO 30072 --- [timesheet-tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-22T16:43:16.816+03:00  INFO 30072 --- [timesheet-tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-22T16:43:16.860+03:00  INFO 30072 --- [timesheet-tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-22T16:43:16.860+03:00  INFO 30072 --- [timesheet-tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1125 ms
+2025-08-22T16:43:17.017+03:00  INFO 30072 --- [timesheet-tool] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-22T16:43:17.058+03:00  INFO 30072 --- [timesheet-tool] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-22T16:43:17.087+03:00  INFO 30072 --- [timesheet-tool] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-22T16:43:17.319+03:00  INFO 30072 --- [timesheet-tool] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-22T16:43:17.341+03:00  INFO 30072 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-22T16:43:17.637+03:00  INFO 30072 --- [timesheet-tool] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@261275ae
+2025-08-22T16:43:17.639+03:00  INFO 30072 --- [timesheet-tool] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-22T16:43:17.696+03:00  INFO 30072 --- [timesheet-tool] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-22T16:43:18.322+03:00  INFO 30072 --- [timesheet-tool] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-22T16:43:18.362+03:00  INFO 30072 --- [timesheet-tool] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:43:18.668+03:00  WARN 30072 --- [timesheet-tool] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-22T16:43:18.989+03:00  INFO 30072 --- [timesheet-tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-22T16:43:19.002+03:00  INFO 30072 --- [timesheet-tool] [main] c.c.timesheet.TimesheetToolApplication   : Started TimesheetToolApplication in 3.776 seconds (process running for 4.119)
+2025-08-22T16:43:31.793+03:00  INFO 30072 --- [timesheet-tool] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-22T16:43:31.809+03:00  INFO 30072 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-22T16:43:31.809+03:00  INFO 30072 --- [timesheet-tool] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-22T16:43:31.938+03:00 ERROR 30072 --- [timesheet-tool] [http-nio-8080-exec-2] c.c.t.c.TimesheetLoggingController       : Can't Retrieve Data: Login trials not found for user ID: 2
+2025-08-22T16:43:49.625+03:00  INFO 30072 --- [timesheet-tool] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-22T16:43:49.634+03:00  INFO 30072 --- [timesheet-tool] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-22T16:43:49.637+03:00  INFO 30072 --- [timesheet-tool] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-22T16:43:49.638+03:00  INFO 30072 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-22T16:43:49.644+03:00  INFO 30072 --- [timesheet-tool] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

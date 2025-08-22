@@ -15,7 +15,6 @@ public class TimesheetLogging {
     @Column(name = "id")
     private long id;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
     @Column(name = "user_id", nullable = false)
     private Long userID;
 
@@ -28,6 +27,9 @@ public class TimesheetLogging {
     public TimesheetLogging(Date loginTime, Date logoutTime) {
         this.loginTime = loginTime;
         this.logoutTime = logoutTime;
+    }
+    public TimesheetLogging(){
+
     }
 
     public long getId() {

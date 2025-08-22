@@ -93,6 +93,13 @@ public class UserService {
             loginTrials.setTrialTime(LocalDateTime.now());
         }
         loginTrialsRepository.save(loginTrials);
-        return "Login successful for user: " + user.getName();
+        return "Login successful for user: " + user.getId();
+    }
+    public String logoutUser(Long userId) {
+        LoginTrials loginTrials = loginTrialsRepository.findByUserId(userId)
+                .orElseThrow(() -> new IllegalArgumentException("Login trials not found for user ID: " + userId));
+        loginTrials.setExpirationTime(LocalDateTime.now());
+        loginTrialsRepository.save(loginTrials);
+        return "Logout successful for user ID: " + userId;
     }
 }
