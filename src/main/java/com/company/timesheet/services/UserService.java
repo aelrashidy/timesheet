@@ -1,13 +1,15 @@
 package com.company.timesheet.services;
 
 import com.company.timesheet.config.EncryptionUtil;
+import com.company.timesheet.controller.UserController;
 import com.company.timesheet.dto.LoginRequest;
 import com.company.timesheet.dto.RegisterRequest;
 import com.company.timesheet.model.LoginTrials;
 import com.company.timesheet.model.User;
 import com.company.timesheet.repository.LoginTrialsRepository;
 import com.company.timesheet.repository.UserRepository;
-import org.springframework.http.ResponseEntity;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -15,7 +17,7 @@ import java.util.Date;
 
 @Service
 public class UserService {
-
+    private static final Logger logger = LogManager.getLogger(UserService.class);
     EncryptionUtil encryptionUtil;
     UserRepository userRepository;
     LoginTrialsRepository loginTrialsRepository;
@@ -26,6 +28,8 @@ public class UserService {
         this.loginTrialsRepository = loginTrialsRepository;
     }
     public String registerUser(RegisterRequest registerRequest) {
+        logger.info("Registering user method called at: {}", new Date());
+        logger.debug("Registering user method called with request: {}", registerRequest);
        if(registerRequest.getName() == null || registerRequest.getName().isEmpty()) {
            throw new IllegalArgumentException("Name must not be null");
        }
@@ -60,13 +64,13 @@ public class UserService {
                 registerRequest.getEmail(),
                 registerRequest.getPassword()
         );
-       System.out.println("Pass: " +  registerRequest.getPassword());
-        System.out.println("Pass: " +  encryptionUtil.decrypt(registerRequest.getPassword()));
        userRepository.save(user);
 
        return "User registered successfully: " + user.getName();
     }
     public String loginUser(LoginRequest loginRequest) {
+        logger.info("Login user method called at: {}", new Date());
+        logger.debug("Login user method called with request: {}", loginRequest);
         if(loginRequest.getEmail() == null || loginRequest.getEmail().isEmpty()) {
             throw new IllegalArgumentException("Email must not be null");
         }
@@ -96,6 +100,8 @@ public class UserService {
         return "Login successful for user: " + user.getId();
     }
     public String logoutUser(Long userId) {
+        logger.info("Logout user method called at: {}", new Date());
+        logger.debug("Logout user method called with userId: {}", userId);
         LoginTrials loginTrials = loginTrialsRepository.findByUserId(userId)
                 .orElseThrow(() -> new IllegalArgumentException("Login trials not found for user ID: " + userId));
         loginTrials.setExpirationTime(LocalDateTime.now());

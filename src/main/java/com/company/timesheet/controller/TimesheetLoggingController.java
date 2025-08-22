@@ -6,8 +6,8 @@ import com.company.timesheet.model.TimesheetLogging;
 import com.company.timesheet.model.User;
 import com.company.timesheet.services.TimesheetLoggingService;
 import jakarta.validation.Valid;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +19,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/timesheet")
 public class TimesheetLoggingController {
-    private static final Logger logger = LoggerFactory.getLogger(TimesheetLoggingController.class);
+    private static final Logger logger = LogManager.getLogger(TimesheetLoggingController.class);
     TimesheetLoggingService timesheetLoggingService;
     public TimesheetLoggingController(TimesheetLoggingService timesheetLoggingService) {
         this.timesheetLoggingService = timesheetLoggingService;

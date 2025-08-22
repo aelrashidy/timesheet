@@ -5,15 +5,18 @@ import com.company.timesheet.model.LoginTrials;
 import com.company.timesheet.model.TimesheetLogging;
 import com.company.timesheet.repository.LoginTrialsRepository;
 import com.company.timesheet.repository.TimesheetLoggingRepository;
-import com.company.timesheet.repository.UserRepository;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.util.Date;
 import java.util.List;
 
 @Service
 public class TimesheetLoggingService {
+    private static final Logger logger = LogManager.getLogger(TimesheetLoggingService.class);
    TimesheetLoggingRepository timesheetLoggingRepository;
    LoginTrialsRepository loginTrialsRepository;
     public TimesheetLoggingService(TimesheetLoggingRepository timesheetLoggingRepository,
@@ -21,15 +24,20 @@ public class TimesheetLoggingService {
         this.timesheetLoggingRepository = timesheetLoggingRepository;
         this.loginTrialsRepository = loginTrialsRepository;
     }
-
-    public String saveTimesheetLogging(TimesheetLoggingRequest timesheetLoggingRequest,Long id) {
+    public void checkLoginValidation(Long userId) {
+        logger.info("Check login validation method called at: {}", new Date());
+        logger.debug("Check login validation method called for user ID: {}", userId);
         //before saving the timesheet logging, we need to check if the user exists and the login trials are valid
-        LoginTrials loginTrials=loginTrialsRepository.findByUserId(id)
-                .orElseThrow(() -> new IllegalArgumentException("Login trials not found for user ID: " + id));
+        LoginTrials loginTrials=loginTrialsRepository.findByUserId(userId)
+                .orElseThrow(() -> new IllegalArgumentException("Login trials not found for user ID: " + userId));
         if (loginTrials.getExpirationTime().isBefore(java.time.LocalDateTime.now())) {
-            throw new IllegalArgumentException("Login trials expired for user ID: " + id);
+            throw new IllegalArgumentException("Login trials expired for user ID: " + userId);
         }
-
+    }
+    public String saveTimesheetLogging(TimesheetLoggingRequest timesheetLoggingRequest,Long id) {
+        logger.info("Save timesheet logging method called at: {}", new Date());
+        logger.debug("Save timesheet logging method called with request: {}", timesheetLoggingRequest);
+           checkLoginValidation(id);
         if (timesheetLoggingRequest.getLoginTime() == null || timesheetLoggingRequest.getLogoutTime() == null) {
             throw new IllegalArgumentException("Login and logout times must not be null");
         }
@@ -46,12 +54,9 @@ public class TimesheetLoggingService {
         return "Timesheet logging saved successfully";
     }
     public List<TimesheetLogging> getTodayLoggingTime(Long userId) {
-        //before saving the timesheet logging, we need to check if the user exists and the login trials are valid
-        LoginTrials loginTrials=loginTrialsRepository.findByUserId(userId)
-                .orElseThrow(() -> new IllegalArgumentException("Login trials not found for user ID: " + userId));
-        if (loginTrials.getExpirationTime().isBefore(java.time.LocalDateTime.now())) {
-            throw new IllegalArgumentException("Login trials expired for user ID: " + userId);
-        }
+        logger.info("Get today logging time method called at: {}", new Date());
+        logger.debug("Get today logging time method called for user ID: {}", userId);
+        checkLoginValidation(userId);
         List<TimesheetLogging> timesheetLoggingList= timesheetLoggingRepository.findByUserID(userId)
                 .orElseThrow(() -> new IllegalArgumentException("Timesheet logging not found for user ID: " + userId));
         LocalDate today = LocalDate.now();

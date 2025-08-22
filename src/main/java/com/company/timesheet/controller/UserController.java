@@ -4,8 +4,8 @@ import com.company.timesheet.dto.LoginRequest;
 import com.company.timesheet.dto.RegisterRequest;
 import com.company.timesheet.model.User;
 import com.company.timesheet.services.UserService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
-    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+    private static final Logger logger = LogManager.getLogger(UserController.class);
     UserService userService;
     public UserController(UserService userService) {
         this.userService = userService;
