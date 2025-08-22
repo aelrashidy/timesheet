@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -19,12 +20,17 @@ public class TimesheetLogging {
     private Long userID;
 
     @Column(name = "login", nullable = false)
-    private Date loginTime;
+    private LocalDateTime loginTime;
 
     @Column(name = "logout", nullable = false)
-    private Date logoutTime;
+    private LocalDateTime logoutTime;
 
-    public TimesheetLogging(Date loginTime, Date logoutTime) {
+    public TimesheetLogging(LocalDateTime loginTime, LocalDateTime logoutTime) {
+        this.loginTime = loginTime;
+        this.logoutTime = logoutTime;
+    }
+    public TimesheetLogging(Long userID, LocalDateTime loginTime, LocalDateTime logoutTime) {
+        this.userID = userID;
         this.loginTime = loginTime;
         this.logoutTime = logoutTime;
     }
@@ -48,19 +54,19 @@ public class TimesheetLogging {
         this.userID = userID;
     }
 
-    public Date getLoginTime() {
+    public LocalDateTime getLoginTime() {
         return loginTime;
     }
 
-    public void setLoginTime(Date loginTime) {
+    public void setLoginTime(LocalDateTime loginTime) {
         this.loginTime = loginTime;
     }
 
-    public Date getLogoutTime() {
+    public LocalDateTime getLogoutTime() {
         return logoutTime;
     }
 
-    public void setLogoutTime(Date logoutTime) {
+    public void setLogoutTime(LocalDateTime logoutTime) {
         this.logoutTime = logoutTime;
     }
 }

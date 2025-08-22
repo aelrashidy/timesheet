@@ -10,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
@@ -41,7 +42,7 @@ public class TimesheetLoggingService {
         if (timesheetLoggingRequest.getLoginTime() == null || timesheetLoggingRequest.getLogoutTime() == null) {
             throw new IllegalArgumentException("Login and logout times must not be null");
         }
-        if (timesheetLoggingRequest.getLoginTime().after(timesheetLoggingRequest.getLogoutTime()))
+        if (timesheetLoggingRequest.getLoginTime().isAfter(timesheetLoggingRequest.getLogoutTime()))
         {
             throw new IllegalArgumentException("Login time must be before logout time");
         }
@@ -61,7 +62,7 @@ public class TimesheetLoggingService {
                 .orElseThrow(() -> new IllegalArgumentException("Timesheet logging not found for user ID: " + userId));
         LocalDate today = LocalDate.now();
         timesheetLoggingList.removeIf(logging ->
-                !logging.getLoginTime().toInstant().atZone(ZoneId.systemDefault()).toLocalDate().isEqual(today)
+                !logging.getLoginTime().toLocalDate().isEqual(LocalDate.now())
         );
         return timesheetLoggingList;
     }

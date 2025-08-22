@@ -2,31 +2,32 @@ package com.company.timesheet.dto;
 
 import jakarta.persistence.Column;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 
 public class TimesheetLoggingRequest {
 
-    private Date loginTime;
-    private Date logoutTime;
+    private LocalDateTime loginTime;
+    private LocalDateTime logoutTime;
 
-    public Date getLoginTime() {
+    public LocalDateTime getLoginTime() {
         return loginTime;
     }
 
-    public void setLoginTime(Date loginTime) {
+    public void setLoginTime(LocalDateTime loginTime) {
         this.loginTime = loginTime;
     }
 
-    public Date getLogoutTime() {
+    public LocalDateTime getLogoutTime() {
         return logoutTime;
     }
 
-    public void setLogoutTime(Date logoutTime) {
+    public void setLogoutTime(LocalDateTime logoutTime) {
         this.logoutTime = logoutTime;
     }
 
-    public TimesheetLoggingRequest(Date loginTime, Date logoutTime) {
+    public TimesheetLoggingRequest(LocalDateTime loginTime, LocalDateTime logoutTime) {
         this.loginTime = loginTime;
         this.logoutTime = logoutTime;
     }
