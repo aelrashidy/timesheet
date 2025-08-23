@@ -2,6 +2,7 @@ package com.company.timesheet.controller;
 
 import com.company.timesheet.dto.LoginRequest;
 import com.company.timesheet.dto.RegisterRequest;
+import com.company.timesheet.dto.UserDto;
 import com.company.timesheet.model.User;
 import com.company.timesheet.services.UserService;
 import org.apache.logging.log4j.LogManager;
@@ -21,21 +22,24 @@ public class UserController {
         this.userService = userService;
     }
     @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody RegisterRequest registerRequest) {
+    public ResponseEntity<UserDto> register(@RequestBody RegisterRequest registerRequest) {
         try {
             return ResponseEntity.ok(userService.registerUser(registerRequest));
         } catch (IllegalArgumentException e) {
-            logger.error("Registration error: {}", e.getMessage());
-            return ResponseEntity.badRequest().body(e.getMessage());
+            UserDto userDto= new UserDto();
+            userDto.setDescription("Register error: "+e.getMessage());
+            return ResponseEntity.badRequest().body(userDto);
         }
     }
     @PostMapping("/login")
-    public ResponseEntity<String> loginUSer(@RequestBody LoginRequest loginRequest) {
+    public ResponseEntity<UserDto> loginUSer(@RequestBody LoginRequest loginRequest) {
         try{
             return ResponseEntity.ok(userService.loginUser(loginRequest));
         } catch (IllegalArgumentException e) {
             logger.error("Login error: {}", e.getMessage());
-            return ResponseEntity.badRequest().body(e.getMessage());
+            UserDto userDto= new UserDto();
+            userDto.setDescription("Login error: "+e.getMessage());
+            return ResponseEntity.badRequest().body(userDto);
         }
     }
     @PostMapping("/logout/{userId}")

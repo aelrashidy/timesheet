@@ -1,5 +1,6 @@
 package com.company.timesheet.services;
 
+import com.company.timesheet.dto.TimesheetLoggingDto;
 import com.company.timesheet.dto.TimesheetLoggingRequest;
 import com.company.timesheet.model.LoginTrials;
 import com.company.timesheet.model.TimesheetLogging;
@@ -35,7 +36,7 @@ public class TimesheetLoggingService {
             throw new IllegalArgumentException("Login trials expired for user ID: " + userId);
         }
     }
-    public String saveTimesheetLogging(TimesheetLoggingRequest timesheetLoggingRequest,Long id) {
+    public TimesheetLoggingDto saveTimesheetLogging(TimesheetLoggingRequest timesheetLoggingRequest, Long id) {
         logger.info("Save timesheet logging method called at: {}", new Date());
         logger.debug("Save timesheet logging method called with request: {}", timesheetLoggingRequest);
            checkLoginValidation(id);
@@ -52,9 +53,15 @@ public class TimesheetLoggingService {
         );
         timesheetLogging.setUserID(id);
         timesheetLoggingRepository.save(timesheetLogging);
-        return "Timesheet logging saved successfully";
+        TimesheetLoggingDto timesheetLoggingDto= new TimesheetLoggingDto(
+                timesheetLogging.getUserID(),
+                timesheetLogging.getLoginTime(),
+                timesheetLogging.getLogoutTime()
+        );
+        timesheetLoggingDto.setDescription("Timesheet logging saved successfully");
+        return timesheetLoggingDto;
     }
-    public List<TimesheetLogging> getTodayLoggingTime(Long userId) {
+    public List<TimesheetLoggingDto> getTodayLoggingTime(Long userId) {
         logger.info("Get today logging time method called at: {}", new Date());
         logger.debug("Get today logging time method called for user ID: {}", userId);
         checkLoginValidation(userId);
@@ -64,6 +71,11 @@ public class TimesheetLoggingService {
         timesheetLoggingList.removeIf(logging ->
                 !logging.getLoginTime().toLocalDate().isEqual(LocalDate.now())
         );
-        return timesheetLoggingList;
+        List<TimesheetLoggingDto> timesheetLoggingDtoList = timesheetLoggingList.stream().map(logging -> new TimesheetLoggingDto(
+                logging.getUserID(),
+                logging.getLoginTime(),
+                logging.getLogoutTime()
+        )).toList();
+        return timesheetLoggingDtoList;
     }
 }

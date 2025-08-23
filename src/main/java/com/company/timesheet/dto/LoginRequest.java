@@ -14,7 +14,7 @@ public class LoginRequest {
     @Size(min = 8, max = 15)
     private String password;
 
-    public LoginRequest(String password, String email) {
+    public LoginRequest(String email, String password) {
         this.password = password;
         this.email = email;
     }

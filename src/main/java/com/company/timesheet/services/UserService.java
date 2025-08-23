@@ -4,6 +4,7 @@ import com.company.timesheet.config.EncryptionUtil;
 import com.company.timesheet.controller.UserController;
 import com.company.timesheet.dto.LoginRequest;
 import com.company.timesheet.dto.RegisterRequest;
+import com.company.timesheet.dto.UserDto;
 import com.company.timesheet.model.LoginTrials;
 import com.company.timesheet.model.User;
 import com.company.timesheet.repository.LoginTrialsRepository;
@@ -27,7 +28,7 @@ public class UserService {
         this.encryptionUtil = encryptionUtil;
         this.loginTrialsRepository = loginTrialsRepository;
     }
-    public String registerUser(RegisterRequest registerRequest) {
+    public UserDto registerUser(RegisterRequest registerRequest) {
         logger.info("Registering user method called at: {}", new Date());
         logger.debug("Registering user method called with request: {}", registerRequest);
        if(registerRequest.getName() == null || registerRequest.getName().isEmpty()) {
@@ -65,10 +66,16 @@ public class UserService {
                 registerRequest.getPassword()
         );
        userRepository.save(user);
-
-       return "User registered successfully: " + user.getName();
+        UserDto userDto=new UserDto(
+                user.getId(),
+                user.getName(),
+                user.getEmail(),
+                user.getPassword()
+        );
+        userDto.setDescription("Register successful");
+       return userDto;
     }
-    public String loginUser(LoginRequest loginRequest) {
+    public UserDto loginUser(LoginRequest loginRequest) {
         logger.info("Login user method called at: {}", new Date());
         logger.debug("Login user method called with request: {}", loginRequest);
         if(loginRequest.getEmail() == null || loginRequest.getEmail().isEmpty()) {
@@ -97,7 +104,14 @@ public class UserService {
             loginTrials.setTrialTime(LocalDateTime.now());
         }
         loginTrialsRepository.save(loginTrials);
-        return "Login successful for user: " + user.getId();
+        UserDto userDto=new UserDto(
+                user.getId(),
+                user.getName(),
+                user.getEmail(),
+                user.getPassword()
+        );
+        userDto.setDescription("Login successful");
+        return userDto;
     }
     public String logoutUser(Long userId) {
         logger.info("Logout user method called at: {}", new Date());
@@ -106,6 +120,6 @@ public class UserService {
                 .orElseThrow(() -> new IllegalArgumentException("Login trials not found for user ID: " + userId));
         loginTrials.setExpirationTime(LocalDateTime.now());
         loginTrialsRepository.save(loginTrials);
-        return "Logout successful for user ID: " + userId;
+        return "Logout successful for user ID:" + userId;
     }
 }

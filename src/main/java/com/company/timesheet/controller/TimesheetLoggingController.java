@@ -1,7 +1,9 @@
 package com.company.timesheet.controller;
 
 import com.company.timesheet.dto.RegisterRequest;
+import com.company.timesheet.dto.TimesheetLoggingDto;
 import com.company.timesheet.dto.TimesheetLoggingRequest;
+import com.company.timesheet.dto.UserDto;
 import com.company.timesheet.model.TimesheetLogging;
 import com.company.timesheet.model.User;
 import com.company.timesheet.services.TimesheetLoggingService;
@@ -25,19 +27,21 @@ public class TimesheetLoggingController {
         this.timesheetLoggingService = timesheetLoggingService;
     }
     @PostMapping("/logging/{userId}")
-    public ResponseEntity<String> loggingTime(@RequestBody TimesheetLoggingRequest timesheetLoggingRequest
+    public ResponseEntity<TimesheetLoggingDto> loggingTime(@RequestBody TimesheetLoggingRequest timesheetLoggingRequest
             , @PathVariable Long userId)
     {
         try {
             return ResponseEntity.ok(timesheetLoggingService.saveTimesheetLogging(timesheetLoggingRequest, userId));
         } catch (IllegalArgumentException e) {
             logger.error("Timesheet logging error: {}", e.getMessage());
-            return ResponseEntity.badRequest().body(e.getMessage());
+            TimesheetLoggingDto timesheetLoggingDto= new TimesheetLoggingDto();
+            timesheetLoggingDto.setDescription("Error wile logging timesheet : "+e.getMessage());
+            return ResponseEntity.badRequest().body(timesheetLoggingDto);
         }
 
     }
     @GetMapping("/getLoggingTime/{userId}")
-    public ResponseEntity<List<TimesheetLogging>> getLoggingTime(@PathVariable Long userId)
+    public ResponseEntity<List<TimesheetLoggingDto>> getLoggingTime(@PathVariable Long userId)
     {
         try {
             return ResponseEntity.ok(timesheetLoggingService.getTodayLoggingTime( userId));
